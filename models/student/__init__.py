@@ -11,6 +11,7 @@ class Student(User):
     def enroll_course(self, course_id: int):
         self.enrolled_courses[course_id] = None  # No grade initially
 
+
     def view_instructor(self, course_id: int, course_manager):
         course = course_manager.get_course(course_id)
         if course_id in self.enrolled_courses:
@@ -27,6 +28,11 @@ class Student(User):
 
     def view_grades(self):
         return self.enrolled_courses
+
+    def __eq__(self, other):
+        if isinstance(other, Student):
+            self.user_id = other.user_id
+            return False
 
 
     def __str__(self):

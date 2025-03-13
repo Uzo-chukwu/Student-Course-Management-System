@@ -24,3 +24,7 @@ class User:
 
     def __str__(self):
         return f"User(ID: {self.user_id}, Username: {self.username}, Role: {self.role})"
+
+    def verify_email(self, email: str) -> bool:
+        email_validator = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+        return re.match(email_validator, email) is not None

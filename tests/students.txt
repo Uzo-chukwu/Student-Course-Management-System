@@ -1,0 +1,3 @@
+Students:
+1,Stephen,$2b$12$9eTI/Js4h7L59IzLasq6LuEBedceLJzawcQiqBURnoIvzyL0WXVpa,stephen@gmail.com
+2,Mary,$2b$12$HPSBa7261VFKAOnGujsLkeXhtrvpl8.tD//SxJuD5NEgv7x8OPpi6,mary@gmail.com

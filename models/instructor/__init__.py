@@ -42,6 +42,38 @@ class Instructor(User):
             student.enrolled_courses[course_id] = grade
             return f"Graded {student.username} with {grade} in course {course_id}."
         return "Student not enrolled in this course."
+
+    def __eq__(self, other):
+        if isinstance(other, Instructor):
+            self.user_id = other.user_id
+            return False
+
+
+    def best_student(self, course_id: int, course_manager):
+        students = course_manager.get_students_in_course(course_id)
+        if not students:
+            return f"No students in course {course_id}"
+        graded_student = {person.username: person.enrolled_courses[course_id] for person in students if
+                          person.enrolled_courses[course_id] is not None}
+        if not graded_student:
+            return f"No students has been graded in {course_manager.name}: {course_id} yet"
+
+
+        best_student = max(graded_student, key=graded_student.get)
+        return f"Best student is: {best_student} ({graded_student[best_student]})"
+
+    def worst_student(self, course_id: int, course_manager):
+        students = course_manager.get_students_in_course(course_id)
+        if not students:
+            return f"No students in course {course_id}"
+        graded_student = {person.username: person.enrolled_courses[course_id] for person in students if
+                          person.enrolled_courses[course_id] is not None}
+        if not graded_student:
+            return f"No students has been graded in {course_manager.name}: {course_id} yet"
+
+        worst_student = min(graded_student, key=graded_student.get)
+        return f"Worst student is: {worst_student} ({graded_student[worst_student]})"
+
     def get_course_size(self):
         return len(self.taught_courses)
 

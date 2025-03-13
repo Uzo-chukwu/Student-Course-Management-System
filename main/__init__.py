@@ -290,13 +290,33 @@ def student_login(course_manager):
                 print("Invalid input!\nEnter integers from 1 and 4 only!")
 
 def enroll_in_a_course(course_manager):
+    student_id = validate_id("Please enter your student id")
     course_id = validate_id("Please enter course id")
     course_name = input("Please enter course name: ")
+    student = course_manager.get_student(student_id)
     course = course_manager.get_course(course_id)
-    if course:
-        print(f"You are now enrolled in {course_name}: {course_id}")
+    if not student:
+        print("Student not found!")
+        return
+
+    if not course:
+        print("Course not found!")
+        return
+
+    enrollment = course_manager.enroll_student(student_id, course_id)
+    if enrollment:
+        course_manager.save_to_file()
+        print(f"Course {course_id} enrolled successfully!")
+        return
     else:
-        print(f"{course_name}: {course_id} does not exist\n It may not have been created\nYou may visit the portal to lay your complain!")
+        print("Enrollment not successful!")
+
+    # if course:
+    # # for course in courses:
+    # # #     if course.course_id == course_id:
+    #         print(f"You are now enrolled in {course_name}: {course_id}")
+    # else:
+    #         print(f"{course_name}: {course_id} does not exist\n It may not have been created\nYou may visit the portal to lay your complain!")
 
 def view_course_instructor(course_manager):
     course_id = validate_id("Please enter course id")
