@@ -266,13 +266,15 @@ def grade_students(instructor, course_manager):
     else:
         print("This course has not been graded yet!")
 
+
 def student_login(course_manager):
     while True:
         print("""
         1. Enroll in course
         2. View_course_instructor
         3. view_course_grade
-        4. Logout
+        4. view_list_of_offered_courses
+        5. Logout
         """)
 
         choice = input("Enter your choice! ")
@@ -284,6 +286,8 @@ def student_login(course_manager):
             case "3":
                 view_course_grade(course_manager)
             case "4":
+                view_list_of_offered_courses(course_manager)
+            case "5":
                 print("Loging out...")
                 break
             case _:
@@ -328,7 +332,15 @@ def view_course_grade(course_manager):
     course_id = validate_id("Please enter course id")
     if course_manager.get_course(course_id):
         for course_id, grade in grades.items():
-            print(f"Grade for {course_id}: {grade if grade else 'Grade has not been awarded yet\nOr you may not have sat for the exam!'}")
+            print(f"Grade for {course_id}: {grade if grade else 'Grade has not been awarded yet. Or you may not have sat for the exam!'}")
+
+def view_list_of_offered_courses(course_manager):
+    course_id = validate_id("Please enter course ID")
+    course = course_manager.get_course(course_id)
+    if course is None:
+        print(f"Course {course_id} is not among the list of courses you enrolled in!")
+    else:
+        print(course)
 
 def register(course_manager):
     while True:

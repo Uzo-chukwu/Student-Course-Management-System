@@ -1,3 +1,0 @@
-Courses:
-404,python,4
-100,java,6

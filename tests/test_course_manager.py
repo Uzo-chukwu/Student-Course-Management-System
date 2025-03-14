@@ -157,6 +157,49 @@ class TestCourseManager(unittest.TestCase):
         self.assertIn(my_student2, students_in_course)
         self.assertEqual(len(students_in_course), 2)
 
+    def test_that_student_can_view_the_list_of_courses(self):
+        my_manager = CourseManager()
+
+        my_manager.students.clear()
+        my_manager.courses.clear()
+        my_manager.instructors.clear()
+        my_manager.enrollments.clear()
+
+        my_instructorOne = Instructor(1, "Chris", "1212", "mark@gmail.com")
+        my_manager.add_instructor(my_instructorOne)
+
+        my_instructorTwo = Instructor(2, "Max", "1212", "dark@gmail.com")
+        my_manager.add_instructor(my_instructorTwo)
+
+        my_instructorThree = Instructor(3, "Sam", "1212", "hark@gmail.com")
+        my_manager.add_instructor(my_instructorThree)
+
+        my_instructorOne.create_course(200, "Java", 4, my_manager)
+        my_instructorTwo.create_course(201, "Python", 4, my_manager)
+        my_instructorThree.create_course(202, "JavaScript", 4, my_manager)
+
+
+        my_student = Student(1, "Stephen", "2020", "stephen@gmail.com")
+        my_manager.add_student(my_student)
+
+        my_manager.enroll_student(1, 200)
+        my_manager.enroll_student(1, 201)
+        my_manager.enroll_student(1, 202)
+
+        courseOne = my_manager.get_course(200)
+        courseTwo = my_manager.get_course(201)
+        courseThree = my_manager.get_course(202)
+
+        print(courseOne)
+        print(courseTwo)
+        print(courseThree)
+        self.assertIsNotNone(courseOne)
+        self.assertIsNotNone(courseTwo)
+        self.assertIsNotNone(courseThree)
+        self.assertTrue(any(enrollment.student_id == 1 and enrollment.course_id == 200 for enrollment in my_manager.enrollments))
+        self.assertTrue(any(enrollment.student_id == 1 and enrollment.course_id == 201 for enrollment in my_manager.enrollments))
+        self.assertTrue(any(enrollment.student_id == 1 and enrollment.course_id == 202 for enrollment in my_manager.enrollments))
+
     def test_instructor_can_grade_students_in_course(self):
         pass
 

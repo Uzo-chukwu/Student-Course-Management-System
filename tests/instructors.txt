@@ -1,2 +1,4 @@
 Instructors:
-1,Chris,$2b$12$1xWAIdr/RdOWm4FXPxsMhOqmvjqT6WOwVLnyP4Td3rx6yDuSsHHoa,mark@gmail.com
+1,Chris,$2b$12$JidNX.8.b8ilpVVw4tpJ4eLa/o1HGj.32iCyaIvQHlWiv1CDXFrjS,mark@gmail.com
+2,Max,$2b$12$njVb983O4WC/wxOmsAYM/.kBDjUwMlFE1yNwS332IfrqGDHMTlCIy,dark@gmail.com
+3,Sam,$2b$12$rbH9Nc3nJ2TFJyoCROs9Se9fWkjylXv4YsPcfTVllU3nggObklYUy,hark@gmail.com

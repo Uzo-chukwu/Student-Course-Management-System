@@ -1,2 +1,4 @@
 Courses:
-200,JavaScript,4
+200,Java,4
+201,Python,4
+202,JavaScript,4

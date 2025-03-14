@@ -1,3 +1,0 @@
-Instructors:
-0,john,$2b$12$j8xRUft12Vm9BVBSRZjhwuNZjSgvE7qAqnyd6/G/x4Cs6i3QbnTuK,john@gmail.com
-0,QW,$2b$12$VGjCE7/hJL30TUXXDcPodO/XO65UpOaaGW5q9jkYuRQ3bzzzJvrsS,e@nsuk.edu.ng

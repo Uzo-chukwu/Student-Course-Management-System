@@ -15,6 +15,7 @@ class CourseManager:
         self.courses = []
         self.enrollments = []
         self.load_from_file()
+
     def add_student(self, student: Student):
         self.students.append(student)
         self.save_to_file()
