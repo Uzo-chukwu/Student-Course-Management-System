@@ -27,15 +27,13 @@ class CourseManager:
 
         for person in self.instructors:
             if person.email == instructor.email:
-                print("Instructor already exists!")
+                # print("Instructor already exists!")
                 return person
         self.instructors.append(instructor)
         self.save_to_file()
 
     def add_course(self, course: Course):
         if any(specific_course.course_id == course.course_id for specific_course in self.courses):
-        # for course in self.courses:
-        #     if course in self.courses:
 
                 raise RepeatedCourseCreationException("Course already exists!")
         self.courses.append(course)
@@ -80,6 +78,12 @@ class CourseManager:
                     students.append(student)
 
         return students
+
+    def get_instructor(self, course_id: int):
+        for instructor in self.instructors:  # Iterate over the list
+            if course_id in instructor.taught_courses:  # Check if instructor teaches this course
+                return instructor
+        return None
     @property
     def get_size_of_students(self):
         return len(self.students)
@@ -92,6 +96,12 @@ class CourseManager:
     def get_size_of_course(self):
         return len(self.courses)
 
+    def get_all_created_courses(self):
+        return self.courses
+
+    def is_email_taken(self, email):
+        return any(student.email == email for student in self.students) or any(instructor.email == email for instructor in self.instructors)
+
 
     def save_to_file(self):
             with open('students.txt', 'w') as f:
@@ -102,101 +112,18 @@ class CourseManager:
                 u.write('Instructors:\n')
                 for instructor in self.instructors:
                     u.write(f"{instructor.user_id},{instructor.username},{instructor.password.decode('utf-8')},{instructor.email}\n")
-                 # for course in self.courses:
-                 #     u.write(f"{course.course_id},{course.name},{course.credits}\n")
-
             with open('courses.txt', 'w') as b:
                  b.write('Courses:\n')
                  for course in self.courses:
                      b.write(f"{course.course_id},{course.name},{course.credits}\n")
 
-
             with open('enrollments.txt', 'w') as v:
                 v.write('Enrollments:\n')
                 for enrollment in self.enrollments:
                     v.write(f"{enrollment.enrollment_id},{enrollment.student_id},{enrollment.course_id}\n")
-
-    # def load_from_file(self):
-    #     try:
-    #         with open('students.txt', 'r') as f:
-    #             section = None
-    #             for line in f:
-    #                 line = line.strip()
-    #                 if not line or line == 'Students:':
-    #                     continue
-    #                 # if line == 'Students:':
-    #                 #     section = 'students'
-    #                 # elif section == 'students' and line:
-    #
-    #                 try:
-    #                     user_id, username, password_hash, email = line.split(',')
-    #                     password_hash = password_hash.encode('utf-8')
-    #                     self.students.append(Student(int(user_id), username, password_hash, email))
-    #                 except ValueError:
-    #                     print(f"Error reading student data: {line}")
-    #
-    #         with open('instructors.txt', 'r') as u:
-    #             section = None
-    #             for line in u:
-    #                 line = line.strip()
-    #                 if not line and line == 'Instructors:':
-    #                     continue
-    #                 # if line == 'Instructors:':
-    #                 #     section = 'instructors'
-    #                 # elif section == 'instructors' and line:
-    #
-    #                 try:
-    #                     user_id, username, password_hash, email = line.split(',')
-    #                     password_hash = password_hash.encode('utf-8')
-    #                     self.instructors.append(Instructor(int(user_id), username, password_hash, email))
-    #                     course_id, name, instructor_id, credit = line.split(',')
-    #                     self.courses.append(Course(int(course_id), name, int(instructor_id), credits))
-    #                 except ValueError:
-    #                     print(f"Error reading instructor data: {line}")
-    #
-    #         with open('courses.txt', 'r') as c:
-    #             section = None
-    #             for line in c:
-    #                 line = line.strip()
-    #                 if not line and line == 'Courses:':
-    #                     continue
-    #
-    #                 try:
-    #                     course_id, name, instructor_id, credits = line.split(',')
-    #                     self.courses.append(Course(int(course_id), name, int(instructor_id), int(credits)))
-    #                 except ValueError:
-    #                     print(f"Error reading course data: {line}")
-    #
-    #         with open('enrollments.txt', 'r') as v:
-    #             section = None
-    #             for line in v:
-    #                 line = line.strip()
-    #                 if not line and line == 'Enrollments:':
-    #                     continue
-    #                 # if line == 'Enrollments:':
-    #                 #     section = 'enrollments'
-    #                 # elif section == 'enrollments' and line:
-    #
-    #                 try:
-    #                     enrollment_id, student_id, course_id = line.split(',')
-    #                     self.enrollments.append(Enrollment(int(enrollment_id), int(student_id), int(course_id)))
-    #                 except ValueError:
-    #                     print(f"Error reading enrollment data: {line}")
-    #
-    #
-    #
-    #     except FileNotFoundError:
-    #         print("No previous data found, starting fresh.")
-    #     except ValueError as e:
-    #         print(f"Error reading data from file: {e}")
-    #
-    #
-
-
-
     def load_from_file(self):
         try:
-            # Load students
+
             with open('students.txt', 'r') as f:
                 for line in f:
                     if line.strip() and not line.startswith("Students:"):
@@ -207,7 +134,6 @@ class CourseManager:
                         except ValueError:
                             print(f"Error reading student data: {line}")
 
-            # Load instructors
             with open('instructors.txt', 'r') as f:
                 for line in f:
                     if line.strip() and not line.startswith("Instructors:"):
@@ -218,7 +144,6 @@ class CourseManager:
                         except ValueError:
                             print(f"Error reading instructor data: {line}")
 
-            # Load courses
             with open('courses.txt', 'r') as f:
                 for line in f:
                     if line.strip() and not line.startswith("Courses:"):
@@ -228,7 +153,7 @@ class CourseManager:
                         except ValueError:
                             print(f"Error reading course data: {line}")
 
-            # Load enrollments
+
             with open('enrollments.txt', 'r') as f:
                 for line in f:
                     if line.strip() and not line.startswith("Enrollments:"):
@@ -247,7 +172,3 @@ if __name__ == "__main__":
     manager = CourseManager()
 
     print(manager.get_course(course_id=404))
-
-
-
-

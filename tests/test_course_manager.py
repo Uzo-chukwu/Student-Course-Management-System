@@ -7,9 +7,6 @@ from models.instructor import Instructor
 from models.student import Student
 
 
-# class UsedIdException(Exception):
-#     pass
-
 
 class InvalidEmailException(Exception):
     pass

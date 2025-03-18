@@ -1,5 +1,4 @@
-
-
+from managers import course_manager
 from models.user import User
 import re
 
@@ -9,7 +8,10 @@ class Student(User):
         self.enrolled_courses = {}  # {course_id: grade}
 
     def enroll_course(self, course_id: int):
-        self.enrolled_courses[course_id] = None  # No grade initially
+        if course_id not in self.enrolled_courses:
+            self.enrolled_courses[course_id] = None  # No grade initially
+        else:
+            print(f"Student {self.username} with id {self.user_id} already enrolled in course {course_id}")
 
 
     def view_instructor(self, course_id: int, course_manager):
@@ -26,8 +28,31 @@ class Student(User):
         return self.email == email
 
 
-    def view_grades(self):
-        return self.enrolled_courses
+    def view_grades(self, course_id: int, course_manager):
+        if not self.enrolled_courses:
+            return f"You are not enrolled in this course."
+
+        if course_id not in self.enrolled_courses:
+            return f"You are not enrolled in this course {course_id}"
+        # grade_record = []
+        # for course_id, grade in self.enrolled_courses.items():
+        course = course_manager.get_course(course_id)
+        course_name = course.name if course else "This course in not known"
+        grade = self.enrolled_courses.get(course_id, None)
+        grade_display = grade if grade is not None else "Grade not assigned yet!"
+        # grade_record.append(f"{course_name}: {grade_display}")
+
+            # return self.enrolled_courses
+        # return "\n".join(grade_record)
+        return f"{course_name}: {grade_display}"
+
+    def get_all_enrolled_courses(self, course_manager):
+        enrolled_courses = []
+        for course_id in self.enrolled_courses:
+            course = course_manager.get_course(course_id)
+            if course:
+                enrolled_courses.append(course)
+        return enrolled_courses
 
     def __eq__(self, other):
         if isinstance(other, Student):

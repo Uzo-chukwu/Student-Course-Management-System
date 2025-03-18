@@ -3,7 +3,8 @@ import re
 import bcrypt
 
 class User:
-    def __init__(self, user_id:int, username: str, password: str, role: str, email:str):
+
+    def __init__(self, user_id: int, username: str, password: str, role: str, email:str):
         self.user_id = user_id
         self.username = username
         self.password = self._hash_password(password)
@@ -17,9 +18,6 @@ class User:
 
     def verify_password(self, password: str) -> bool:
         return bcrypt.checkpw(password.encode('utf-8'), self.password)
-
-    # def is_email_matching(self, email:str) -> bool:
-    #     return self.email == email
 
 
     def __str__(self):
