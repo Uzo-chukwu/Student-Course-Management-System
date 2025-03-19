@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14801321-b2be-41fe-a1c3-86b27d9e66ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/classWorkThree.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_app/main_application/MainApplication.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_app/main_application/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_app/movie/Movie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_app/movie/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/TestUserMovieSystem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/courses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/enrollments.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/instructors.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/students.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/test_course_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tests/test_course_manager.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Danfix-lex&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Uzo-chukwu/Student-Course-Management-System.git&quot;,
+    &quot;accountId&quot;: &quot;384b4405-c662-4de6-9405-5186e584fca4&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2uRB2dJzppN4tOzpkOJ6Http1aX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.test_add_duplicate_movie_to_dict.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.test_add_movie.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.test_add_movie_to_dict.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.test_add_multiple_movies_to_dict.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.test_add_rating.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.test_get_average_rating.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.test_is_available.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.test_movie_initialization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestMovie.test_rating_is_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestUserMovieSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestUserMovieSystem.test_add_movie.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestUserMovieSystem.test_get_all_average_ratings.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestUserMovieSystem.test_get_average_rating_with_ratings.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestUserMovieSystem.test_is_rated.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestUserMovieSystem.test_login_failure.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestUserMovieSystem.test_login_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestUserMovieSystem.test_rate_movie.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for TestUserMovieSystem.TestUserMovieSystem.test_user_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for UserTest.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for UserTest.UserTest.test_user_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in TestUserMovieSystem.py.executor&quot;: &quot;Coverage&quot;,
+    &quot;Python.MainApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TestUserMovieSystem.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/danfix/pythonClass/Student-Course-Management-System/classWorkThree&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/movie_app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="MainApplication" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="classWorkThree" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/movie_app/main_application" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/movie_app/main_application/MainApplication.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="classWorkThree" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for TestUserMovieSystem.TestMovie.test_add_duplicate_movie_to_dict" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="classWorkThree" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestUserMovieSystem.TestMovie.test_add_duplicate_movie_to_dict&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for TestUserMovieSystem.TestMovie.test_add_movie_to_dict" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="classWorkThree" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestUserMovieSystem.TestMovie.test_add_movie_to_dict&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for TestUserMovieSystem.TestMovie.test_add_multiple_movies_to_dict" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="classWorkThree" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestUserMovieSystem.TestMovie.test_add_multiple_movies_to_dict&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in TestUserMovieSystem.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="classWorkThree" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/TestUserMovieSystem.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in TestUserMovieSystem.py" />
+        <item itemvalue="Python tests.Python tests for TestUserMovieSystem.TestMovie.test_add_multiple_movies_to_dict" />
+        <item itemvalue="Python.MainApplication" />
+        <item itemvalue="Python tests.Python tests for TestUserMovieSystem.TestMovie.test_add_duplicate_movie_to_dict" />
+        <item itemvalue="Python tests.Python tests for TestUserMovieSystem.TestMovie.test_add_movie_to_dict" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.25659.43" />
+        <option value="bundled-python-sdk-181015f7ab06-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.25659.43" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14801321-b2be-41fe-a1c3-86b27d9e66ca" name="Changes" comment="" />
+      <created>1742201300764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742201300764</updated>
+      <workItem from="1742201302031" duration="22681000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/classWorkThree$MainApplication.coverage" NAME="MainApplication Coverage Results" MODIFIED="1742219580516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_app/main_application" />
+    <SUITE FILE_PATH="coverage/classWorkThree$.coverage" NAME=" Coverage Results" MODIFIED="1742219918903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/classWorkThree$TestUserMovieSystem.coverage" NAME="TestUserMovieSystem Coverage Results" MODIFIED="1742221038848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+  </component>
+</project>
